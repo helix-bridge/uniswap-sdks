@@ -1,13 +1,15 @@
 name: "Code Quality Checks"
 
 on:
-  workflow_call:
+  # workflow_call:
 
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+  # pull_request:
+  #   types:
+  #     - opened
+  #     - synchronize
+  #     - reopened
+
+  workflow_dispatch:
 
 jobs:
   build-and-test:

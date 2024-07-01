@@ -1,11 +1,12 @@
 name: Check PR Title
 
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
+  # pull_request_target:
+  #   types:
+  #     - opened
+  #     - edited
+  #     - synchronize
+  workflow_dispatch:
 
 jobs:
   # Ensures that the PR title adheres to [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).

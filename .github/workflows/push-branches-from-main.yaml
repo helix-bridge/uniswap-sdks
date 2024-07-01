@@ -1,9 +1,10 @@
 name: "Push changes to beta and alpha branches"
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
 
 jobs:
   dev-branch-push:
