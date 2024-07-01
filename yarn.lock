@@ -2222,8 +2222,8 @@ __metadata:
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@helix-bridge/sdk-core": 1.0.1
-    "@helix-bridge/v2-sdk": "workspace:*"
-    "@helix-bridge/v3-sdk": "workspace:*"
+    "@helix-bridge/v2-sdk": 1.0.2
+    "@helix-bridge/v3-sdk": 1.0.2
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     prettier: ^2.4.1
@@ -2298,8 +2298,8 @@ __metadata:
   dependencies:
     "@helix-bridge/router-sdk": "workspace:*"
     "@helix-bridge/sdk-core": 1.0.1
-    "@helix-bridge/v2-sdk": "workspace:*"
-    "@helix-bridge/v3-sdk": "workspace:*"
+    "@helix-bridge/v2-sdk": 1.0.2
+    "@helix-bridge/v3-sdk": 1.0.2
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
@@ -2321,7 +2321,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/v2-sdk@workspace:*, @helix-bridge/v2-sdk@workspace:sdks/v2-sdk":
+"@helix-bridge/v2-sdk@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@helix-bridge/v2-sdk@npm:1.0.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv2-sdk%2F1.0.2%2F94ae6c6a3c6060b69c5a21a427b683f0b84f8f23"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/solidity": ^5.0.9
+    "@helix-bridge/sdk-core": 1.0.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: 2260124a4aad0f102d59af5ee80ccedc327a1c9f37d74ef6a021ed6c11f9d9965eb2a2602d46b93dad81a567d7064fd21c0549f9ba40a86d06ac25ff6c8b33fc
+  languageName: node
+  linkType: hard
+
+"@helix-bridge/v2-sdk@workspace:sdks/v2-sdk":
   version: 0.0.0-use.local
   resolution: "@helix-bridge/v2-sdk@workspace:sdks/v2-sdk"
   dependencies:
@@ -2338,7 +2351,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/v3-sdk@workspace:*, @helix-bridge/v3-sdk@workspace:sdks/v3-sdk":
+"@helix-bridge/v3-sdk@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@helix-bridge/v3-sdk@npm:1.0.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv3-sdk%2F1.0.2%2F3d798efe8945d324b732b53a78201b87f2bbb28d"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@ethersproject/solidity": ^5.0.9
+    "@helix-bridge/sdk-core": 1.0.1
+    "@uniswap/swap-router-contracts": ^1.3.0
+    "@uniswap/v3-periphery": ^1.1.1
+    "@uniswap/v3-staker": 1.0.0
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: c42ffa8dc7da913218c2185bc3b546fae0f99badcbbc432c1c540443acfb5390194360a64b3a5b6e69b1a8a8d58483f539d4aa362d7674e5ee7a2910195be787
+  languageName: node
+  linkType: hard
+
+"@helix-bridge/v3-sdk@workspace:sdks/v3-sdk":
   version: 0.0.0-use.local
   resolution: "@helix-bridge/v3-sdk@workspace:sdks/v3-sdk"
   dependencies:
