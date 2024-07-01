@@ -4,7 +4,7 @@
   "solidity.compileUsingRemoteVersion": "v0.8.17",
   "solidity.formatter": "forge",
   "files.insertFinalNewline": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "eslint.workingDirectories": [
     "./sdks/permit2-sdk",
     "./sdks/router-sdk",
