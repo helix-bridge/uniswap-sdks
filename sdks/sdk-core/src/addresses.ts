@@ -236,6 +236,13 @@ const BLAST_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66',
 }
 
+const BITLAYER_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xc95D939Da72ECe8Bd794d42EaEd28974CDb0ADa2',
+  multicallAddress: '0x3d33856dcf74f110690f5a2647c7dfb9bb5ff2d0',
+  quoterAddress: '0x6677D5Bb2Bc48f4F35E2a9b516bb29fBc1d22049',
+  nonfungiblePositionManagerAddress: '0x6b5622503fe2ca3cd371f7dfe5393df04b63ce22',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -258,6 +265,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
   // [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
+  [ChainId.BITLAYER_TESTNET]: BITLAYER_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

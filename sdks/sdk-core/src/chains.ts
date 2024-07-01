@@ -22,6 +22,7 @@ export enum ChainId {
   ZORA_SEPOLIA = 999999999,
   // ROOTSTOCK = 30,
   BLAST = 81457,
+  BITLAYER_TESTNET = 200810,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -46,6 +47,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ZORA_SEPOLIA,
   // ChainId.ROOTSTOCK,
   ChainId.BLAST,
+  ChainId.BITLAYER_TESTNET,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
