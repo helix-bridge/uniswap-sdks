@@ -62,7 +62,8 @@
     "trailingComma": "es5"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@helix-bridge:registry": "https://npm.pkg.github.com"
   },
   "release": {
     "extends": "semantic-release-monorepo",
