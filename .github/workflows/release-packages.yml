@@ -1,0 +1,40 @@
+name: Release Packages
+
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: yarn install --frozen-lockfile
+      - run: yarn g:build
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+      - run: yarn install --frozen-lockfile
+      - run: |
+          npm publish -w @helix-bridge/sdk-core
+          npm publish -w @helix-bridge/v2-sdk
+          npm publish -w @helix-bridge/v3-sdk
+          npm publish -w @helix-bridge/router-sdk
+          npm publish -w @helix-bridge/uniswapx-sdk
+          npm publish -w @helix-bridge/universal-router-sdk
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
