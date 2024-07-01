@@ -1,5 +1,6 @@
 {
   "name": "@helix-bridge/v2-sdk",
+  "version": "1.0.0",
   "description": "🛠 An SDK for building applications on top of Uniswap V2",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
