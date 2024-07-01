@@ -29,9 +29,9 @@
   },
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
+    "@helix-bridge/sdk-core": "workspace:*",
     "@typechain/ethers-v5": "^10.1.0",
     "@typechain/hardhat": "^6.1.2",
-    "@uniswap/sdk-core": "workspace:*",
     "ethers": "^5.7.0",
     "typechain": "^8.1.0"
   }

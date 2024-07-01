@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/universal-router-sdk",
+  "name": "@helix-bridge/universal-router-sdk",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -30,12 +30,12 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
+    "@helix-bridge/router-sdk": "workspace:*",
+    "@helix-bridge/sdk-core": "workspace:*",
+    "@helix-bridge/v2-sdk": "workspace:*",
+    "@helix-bridge/v3-sdk": "workspace:*",
     "@uniswap/permit2-sdk": "^1.2.1",
-    "@uniswap/router-sdk": "workspace:*",
-    "@uniswap/sdk-core": "workspace:*",
     "@uniswap/universal-router": "1.6.0",
-    "@uniswap/v2-sdk": "workspace:*",
-    "@uniswap/v3-sdk": "workspace:*",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
   },
