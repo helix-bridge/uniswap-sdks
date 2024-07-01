@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn g:build
 
   publish-gpr:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: |
           npm publish -w @helix-bridge/sdk-core
           npm publish -w @helix-bridge/v2-sdk
