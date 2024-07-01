@@ -1,7 +1,7 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { getCreate2Address } from '@ethersproject/address'
 import { keccak256 } from '@ethersproject/solidity'
-import { ChainId, Token } from '@uniswap/sdk-core'
+import { ChainId, Token } from '@helix-bridge/sdk-core'
 import { FeeAmount, POOL_INIT_CODE_HASH } from '../constants'
 
 function getInitCodeOfSpecialChain(chainId: ChainId) {

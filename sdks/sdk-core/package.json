@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/sdk-core",
+  "name": "@helix-bridge/sdk-core",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -42,7 +42,8 @@
     "singleQuote": true
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@helix-bridge:registry": "https://npm.pkg.github.com"
   },
   "release": {
     "extends": "semantic-release-monorepo",

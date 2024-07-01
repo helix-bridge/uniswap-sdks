@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/uniswapx-sdk",
+  "name": "@helix-bridge/uniswapx-sdk",
   "author": "Uniswap",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -30,8 +30,8 @@
   "dependencies": {
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
+    "@helix-bridge/sdk-core": "workspace:*",
     "@uniswap/permit2-sdk": "^1.2.1",
-    "@uniswap/sdk-core": "workspace:*",
     "ethers": "^5.7.0"
   },
   "devDependencies": {
@@ -61,7 +61,8 @@
     }
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@helix-bridge:registry": "https://npm.pkg.github.com"
   },
   "release": {
     "extends": "semantic-release-monorepo",
