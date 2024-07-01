@@ -1,6 +1,6 @@
 {
   "name": "@helix-bridge/uniswapx-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Uniswap",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
