@@ -216,15 +216,15 @@ const ZORA_SEPOLIA_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0x23C0F71877a1Fc4e20A78018f9831365c85f3064',
 }
 
-const ROOTSTOCK_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xaF37EC98A00FD63689CF3060BF3B6784E00caD82',
-  multicallAddress: '0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386',
-  quoterAddress: '0xb51727c996C68E60F598A923a5006853cd2fEB31',
-  v3MigratorAddress: '0x16678977CA4ec3DAD5efc7b15780295FE5f56162',
-  nonfungiblePositionManagerAddress: '0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1',
-  tickLensAddress: '0x55B9dF5bF68ADe972191a91980459f48ecA16afC',
-  swapRouter02Address: '0x0B14ff67f0014046b4b99057Aec4509640b3947A',
-}
+// const ROOTSTOCK_ADDRESSES: ChainAddresses = {
+//   v3CoreFactoryAddress: '0xaF37EC98A00FD63689CF3060BF3B6784E00caD82',
+//   multicallAddress: '0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386',
+//   quoterAddress: '0xb51727c996C68E60F598A923a5006853cd2fEB31',
+//   v3MigratorAddress: '0x16678977CA4ec3DAD5efc7b15780295FE5f56162',
+//   nonfungiblePositionManagerAddress: '0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1',
+//   tickLensAddress: '0x55B9dF5bF68ADe972191a91980459f48ecA16afC',
+//   swapRouter02Address: '0x0B14ff67f0014046b4b99057Aec4509640b3947A',
+// }
 
 const BLAST_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd',
@@ -234,6 +234,13 @@ const BLAST_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xB218e4f7cF0533d4696fDfC419A0023D33345F28',
   tickLensAddress: '0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274',
   swapRouter02Address: '0x549FEB8c9bd4c12Ad2AB27022dA12492aC452B66',
+}
+
+const BITLAYER_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xc95D939Da72ECe8Bd794d42EaEd28974CDb0ADa2',
+  multicallAddress: '0x3d33856dcf74f110690f5a2647c7dfb9bb5ff2d0',
+  quoterAddress: '0x6677D5Bb2Bc48f4F35E2a9b516bb29fBc1d22049',
+  nonfungiblePositionManagerAddress: '0x6b5622503fe2ca3cd371f7dfe5393df04b63ce22',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -256,8 +263,9 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.ZORA]: ZORA_ADDRESSES,
   [ChainId.ZORA_SEPOLIA]: ZORA_SEPOLIA_ADDRESSES,
-  [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
+  // [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
+  [ChainId.BITLAYER_TESTNET]: BITLAYER_TESTNET_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
