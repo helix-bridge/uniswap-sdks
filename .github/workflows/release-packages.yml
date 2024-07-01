@@ -23,7 +23,10 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: |
+          yarn config set npmAuthToken ${{secrets.GITHUB_TOKEN}}
+          yarn install --immutable
+          yarn config unset npmAuthToken
 
       - name: Build packages
         run: yarn g:build
