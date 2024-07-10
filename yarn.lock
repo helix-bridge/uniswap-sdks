@@ -2294,7 +2294,7 @@ __metadata:
   dependencies:
     "@ethersproject/bytes": ^5.7.0
     "@ethersproject/providers": ^5.7.0
-    "@helix-bridge/sdk-core": 1.0.1
+    "@helix-bridge/sdk-core": 1.0.5
     "@typechain/ethers-v5": ^10.1.0
     "@types/jest": ^24.0.25
     "@types/node": ^18.7.16
