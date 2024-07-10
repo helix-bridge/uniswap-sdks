@@ -2234,9 +2234,9 @@ __metadata:
   resolution: "@helix-bridge/router-sdk@workspace:sdks/router-sdk"
   dependencies:
     "@ethersproject/abi": ^5.5.0
-    "@helix-bridge/sdk-core": 1.0.1
-    "@helix-bridge/v2-sdk": 1.0.2
-    "@helix-bridge/v3-sdk": 1.0.2
+    "@helix-bridge/sdk-core": 1.0.5
+    "@helix-bridge/v2-sdk": 1.0.5
+    "@helix-bridge/v3-sdk": 1.0.5
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     prettier: ^2.4.1
@@ -2361,6 +2361,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@helix-bridge/v2-sdk@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@helix-bridge/v2-sdk@npm:1.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv2-sdk%2F1.0.5%2Fc346994af25ca6540c435b7bfa46eb999fdcdaae"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/solidity": ^5.0.9
+    "@helix-bridge/sdk-core": 1.0.5
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: ada184f380c97e5a7282854682cdba49244fb6ba99734a165d8992293faad35e50a18c1887117fe6abc9d37a9b73f135d91e80a6b992ff50a7a47e81f8657813
+  languageName: node
+  linkType: hard
+
 "@helix-bridge/v2-sdk@workspace:sdks/v2-sdk":
   version: 0.0.0-use.local
   resolution: "@helix-bridge/v2-sdk@workspace:sdks/v2-sdk"
@@ -2391,6 +2404,22 @@ __metadata:
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
   checksum: c42ffa8dc7da913218c2185bc3b546fae0f99badcbbc432c1c540443acfb5390194360a64b3a5b6e69b1a8a8d58483f539d4aa362d7674e5ee7a2910195be787
+  languageName: node
+  linkType: hard
+
+"@helix-bridge/v3-sdk@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@helix-bridge/v3-sdk@npm:1.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv3-sdk%2F1.0.5%2F9c1d40d7e3ff8a7e00e68084e6cc78375193e360"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@ethersproject/solidity": ^5.0.9
+    "@helix-bridge/sdk-core": 1.0.5
+    "@uniswap/swap-router-contracts": ^1.3.0
+    "@uniswap/v3-periphery": ^1.1.1
+    "@uniswap/v3-staker": 1.0.0
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: 0b11c3ffd741a4bd45edfd09950f1b2e8b0b629c3b7a31f8553e0b1f238e37765287bd488917d77bdc1302bd79b1eb097576b7486fe19ea8bdba6510314d10f0
   languageName: node
   linkType: hard
 
