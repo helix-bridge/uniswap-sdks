@@ -4,12 +4,22 @@ import { NativeCurrency } from './nativeCurrency'
 import { Token } from './token'
 import { WETH9 } from './weth9'
 
+function getSymbolAndName(chainId: number) {
+  switch (chainId) {
+    case 200810:
+    case 200901:
+      return ['BTC', 'BTC']
+    default:
+      return ['ETH', 'Ether']
+  }
+}
+
 /**
  * Ether is the main usage of a 'native' currency, i.e. for Ethereum mainnet and all testnets
  */
 export class Ether extends NativeCurrency {
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ETH', 'Ether')
+    super(chainId, 18, getSymbolAndName(chainId)[0], getSymbolAndName(chainId)[1])
   }
 
   public get wrapped(): Token {

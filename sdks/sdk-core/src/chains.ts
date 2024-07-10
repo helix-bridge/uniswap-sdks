@@ -23,6 +23,7 @@ export enum ChainId {
   // ROOTSTOCK = 30,
   BLAST = 81457,
   BITLAYER_TESTNET = 200810,
+  BITLAYER = 200901,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -48,6 +49,7 @@ export const SUPPORTED_CHAINS = [
   // ChainId.ROOTSTOCK,
   ChainId.BLAST,
   ChainId.BITLAYER_TESTNET,
+  ChainId.BITLAYER,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -62,3 +64,8 @@ export enum NativeCurrencyName {
   AVAX = 'AVAX',
   // ROOTSTOCK = 'RBTC',
 }
+
+export const CHAINS_SUPPORTED_BY_HELIXSWAP = [
+  ChainId.BITLAYER_TESTNET,
+  ChainId.BITLAYER,
+]
