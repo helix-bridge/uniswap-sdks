@@ -2272,6 +2272,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@helix-bridge/sdk-core@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@helix-bridge/sdk-core@npm:1.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fsdk-core%2F1.1.0%2F623ec434c8255fb44ff4b31c1301fd239907509f"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: ec178d5b3ada15276f83658841790ff349f86f25072c9d7f68a1038e6757c52c784b9c0845943c4cf3d1d61bdb08535975eeefdc702831b8d727acc89e287270
+  languageName: node
+  linkType: hard
+
 "@helix-bridge/sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@helix-bridge/sdk-core@workspace:sdks/sdk-core"
@@ -2367,7 +2381,7 @@ __metadata:
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.0.5
+    "@helix-bridge/sdk-core": 1.1.0
     "@types/big.js": ^4.0.5
     "@types/jest": ^24.0.25
     "@uniswap/v2-core": ^1.0.1
@@ -2400,7 +2414,7 @@ __metadata:
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.0.5
+    "@helix-bridge/sdk-core": 1.1.0
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/v3-core": 1.0.0
