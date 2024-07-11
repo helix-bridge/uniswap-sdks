@@ -24,6 +24,7 @@ export enum ChainId {
   BLAST = 81457,
   BITLAYER_TESTNET = 200810,
   BITLAYER = 200901,
+  DARWINIA = 46,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -50,6 +51,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.BLAST,
   ChainId.BITLAYER_TESTNET,
   ChainId.BITLAYER,
+  ChainId.DARWINIA,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -62,10 +64,13 @@ export enum NativeCurrencyName {
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
   AVAX = 'AVAX',
+  BTC = 'BTC',
+  RING = 'RING',
   // ROOTSTOCK = 'RBTC',
 }
 
 export const CHAINS_SUPPORTED_BY_HELIXSWAP = [
   ChainId.BITLAYER_TESTNET,
   ChainId.BITLAYER,
+  ChainId.DARWINIA,
 ]
