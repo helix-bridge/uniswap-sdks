@@ -1,6 +1,6 @@
 {
   "name": "@helix-bridge/router-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An sdk for routing swaps using Uniswap v2 and Uniswap v3.",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "@ethersproject/abi": "^5.5.0",
-    "@helix-bridge/sdk-core": "1.0.1",
-    "@helix-bridge/v2-sdk": "1.0.2",
-    "@helix-bridge/v3-sdk": "1.0.2",
+    "@helix-bridge/sdk-core": "1.0.5",
+    "@helix-bridge/v2-sdk": "1.0.5",
+    "@helix-bridge/v3-sdk": "1.0.5",
     "@uniswap/swap-router-contracts": "^1.3.0"
   },
   "devDependencies": {

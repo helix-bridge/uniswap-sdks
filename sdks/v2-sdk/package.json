@@ -1,6 +1,6 @@
 {
   "name": "@helix-bridge/v2-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🛠 An SDK for building applications on top of Uniswap V2",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
@@ -27,7 +27,7 @@
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/solidity": "^5.0.9",
-    "@helix-bridge/sdk-core": "1.0.1",
+    "@helix-bridge/sdk-core": "1.0.5",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },

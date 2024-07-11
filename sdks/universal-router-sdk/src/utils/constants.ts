@@ -115,6 +115,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x5F8D4232367759bCe5d9488D3ade77FCFF6B9b6B',
     creationBlock: 3937748,
   },
+  // bitlayer mainnet
+  [200901]: {
+    router: '0x0ac58df0cc3542bec4cda71b16d06c3ccc39f405',
+    weth: '0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F',
+    creationBlock: 2753030,
+  }
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
