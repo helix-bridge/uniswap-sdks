@@ -120,7 +120,13 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     router: '0x0ac58df0cc3542bec4cda71b16d06c3ccc39f405',
     weth: '0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F',
     creationBlock: 2753030,
-  }
+  },
+  // darwinia
+  [46]: {
+    router: '0xF8cD37bfC0f8a377b8A82C574c1bC4370EDc480B',
+    weth: '0xE7578598Aac020abFB918f33A20faD5B71d670b4',
+    creationBlock: 3087706,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {

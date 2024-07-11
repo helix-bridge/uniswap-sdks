@@ -4,11 +4,18 @@ import { NativeCurrency } from './nativeCurrency'
 import { Token } from './token'
 import { WETH9 } from './weth9'
 
+/**
+ * Specify the symbol and name of specific chains
+ * @param chainId Chain ID of the chain
+ * @returns [Symbol, Name]
+ */
 function getSymbolAndName(chainId: number) {
   switch (chainId) {
     case 200810:
     case 200901:
       return ['BTC', 'BTC']
+    case 46:
+      return ['RING', 'RING']
     default:
       return ['ETH', 'Ether']
   }

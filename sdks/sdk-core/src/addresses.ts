@@ -250,6 +250,13 @@ const BITLAYER_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xFBAD806Bdf9cEC2943be281FB355Da05068DE925',
 }
 
+const DARWINIA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xF118eAEcCFc037986D08A6CBC97A4F2C8de9108e',
+  multicallAddress: '0xD1167316a70d5566ED18BCfe1e265D59338447bE',
+  quoterAddress: '0x54692837aC72A54d38069Ac6Ec8c4C56590e8679',
+  nonfungiblePositionManagerAddress: '0x00DEba7612403e8bDa0b82186548EE59C86CBf98',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -274,6 +281,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.BITLAYER_TESTNET]: BITLAYER_TESTNET_ADDRESSES,
   [ChainId.BITLAYER]: BITLAYER_ADDRESSES,
+  [ChainId.DARWINIA]: DARWINIA_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

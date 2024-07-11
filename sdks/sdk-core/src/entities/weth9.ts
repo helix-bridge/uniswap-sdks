@@ -28,4 +28,6 @@ export const WETH9: { [chainId: number]: Token } = {
   200810: new Token(200810, '0x5F8D4232367759bCe5d9488D3ade77FCFF6B9b6B', 18, 'WBTC', 'Wrapped BTC'),
   // Bitlayer
   200901: new Token(200901, '0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F', 18, 'WBTC', 'Wrapped BTC'),
+  // Darwinia
+  46: new Token(46, '0xE7578598Aac020abFB918f33A20faD5B71d670b4', 18, 'WRING', 'Wrapped RING'),
 }
