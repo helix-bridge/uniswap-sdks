@@ -2244,20 +2244,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/sdk-core@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@helix-bridge/sdk-core@npm:1.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fsdk-core%2F1.0.1%2F9ce578576eec1dc6470b49507c07da35861990b5"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-  checksum: 208b88cd4e46a1108e67954337ec11312c4187241790ed1df2a6d6ce3967931103bd0e240b9a22ad760a24b2c0bc952efa0ddbce38e2cb0c61fc4885ea344fcf
-  languageName: node
-  linkType: hard
-
 "@helix-bridge/sdk-core@npm:1.0.5":
   version: 1.0.5
   resolution: "@helix-bridge/sdk-core@npm:1.0.5::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fsdk-core%2F1.0.5%2F9ce81e268c84d0c8dd7126bf198d7b93da9c41eb"
@@ -2308,7 +2294,7 @@ __metadata:
   dependencies:
     "@ethersproject/bytes": ^5.7.0
     "@ethersproject/providers": ^5.7.0
-    "@helix-bridge/sdk-core": 1.0.5
+    "@helix-bridge/sdk-core": 1.1.0
     "@typechain/ethers-v5": ^10.1.0
     "@types/jest": ^24.0.25
     "@types/node": ^18.7.16
@@ -17867,7 +17853,7 @@ __metadata:
   resolution: "uniswapx-integration@workspace:sdks/uniswapx-sdk/integration"
   dependencies:
     "@ethersproject/bytes": ^5.7.0
-    "@helix-bridge/sdk-core": 1.0.1
+    "@helix-bridge/sdk-core": 1.1.0
     "@nomicfoundation/hardhat-chai-matchers": 1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.10
     "@nomiclabs/hardhat-ethers": ^2.2.3
