@@ -2294,7 +2294,7 @@ __metadata:
   dependencies:
     "@ethersproject/bytes": ^5.7.0
     "@ethersproject/providers": ^5.7.0
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@typechain/ethers-v5": ^10.1.0
     "@types/jest": ^24.0.25
     "@types/node": ^18.7.16
@@ -17853,7 +17853,7 @@ __metadata:
   resolution: "uniswapx-integration@workspace:sdks/uniswapx-sdk/integration"
   dependencies:
     "@ethersproject/bytes": ^5.7.0
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@nomicfoundation/hardhat-chai-matchers": 1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.10
     "@nomiclabs/hardhat-ethers": ^2.2.3
