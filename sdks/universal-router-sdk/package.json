@@ -1,6 +1,6 @@
 {
   "name": "@helix-bridge/universal-router-sdk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
