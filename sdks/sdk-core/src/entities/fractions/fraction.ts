@@ -35,7 +35,8 @@ export class Fraction {
       return new Fraction(fractionish)
 
     if ('numerator' in fractionish && 'denominator' in fractionish) return fractionish
-    throw new Error('Could not parse fraction')
+    // throw new Error('Could not parse fraction')
+    return new Fraction(fractionish)
   }
 
   // performs floor division

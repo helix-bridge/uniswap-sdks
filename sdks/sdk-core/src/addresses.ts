@@ -48,6 +48,9 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
+  [ChainId.BITLAYER_TESTNET]: '0x8e8867CB4f2E4688ec1962d19A654a084659307c',
+  [ChainId.BITLAYER]: '0x1037E9078df7ab09B9AF78B15D5E7aaD7C1AfDd0',
+  [ChainId.DARWINIA]: '0x5669a449D892f03B4c541A321926f18e272c64A2',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -63,6 +66,9 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
+  [ChainId.BITLAYER_TESTNET]: '0xA16fC83947D26f8a16cA02DC30D95Af5440C38AD',
+  [ChainId.BITLAYER]: '0xB0Cc30795f9E0125575742cFA8e73D20D9966f81',
+  [ChainId.DARWINIA]: '0xb899409cda0ffa2bf87f9c7b31f3c77d6a3a0bb0',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -237,10 +243,10 @@ const BLAST_ADDRESSES: ChainAddresses = {
 }
 
 const BITLAYER_TESTNET_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xc95D939Da72ECe8Bd794d42EaEd28974CDb0ADa2',
+  v3CoreFactoryAddress: '0x2B0aC3b9a8e89Ba2e6e806f59272bb1c718e1E2a',
   multicallAddress: '0x3d33856dcf74f110690f5a2647c7dfb9bb5ff2d0',
-  quoterAddress: '0x6677D5Bb2Bc48f4F35E2a9b516bb29fBc1d22049',
-  nonfungiblePositionManagerAddress: '0x6b5622503fe2ca3cd371f7dfe5393df04b63ce22',
+  quoterAddress: '0xb48936a79DEe74f884dbC3fE303f5dA64FE15420',
+  nonfungiblePositionManagerAddress: '0xE92E24d12B9b0F5BF39EFAc4A461d272B13694F2',
 }
 
 const BITLAYER_ADDRESSES: ChainAddresses = {
