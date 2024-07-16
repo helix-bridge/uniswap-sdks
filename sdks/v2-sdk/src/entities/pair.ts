@@ -1,7 +1,7 @@
 import { getCreate2Address } from '@ethersproject/address'
 import { BigNumber } from '@ethersproject/bignumber'
 import { keccak256, pack } from '@ethersproject/solidity'
-import { BigintIsh, CurrencyAmount, Percent, Price, sqrt, Token } from '@helix-bridge/sdk-core'
+import { BigintIsh, ChainId, CurrencyAmount, Percent, Price, sqrt, Token } from '@helix-bridge/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 
@@ -21,6 +21,69 @@ import {
 } from '../constants'
 import { InsufficientInputAmountError, InsufficientReservesError } from '../errors'
 
+function getPairAddress(token0: Token, token1: Token) {
+  const { chainId } = token0
+  switch (chainId) {
+    case ChainId.BITLAYER_TESTNET:
+      if (
+        token0.address.toLowerCase() === '0x209ba92b5cc962673a30998ed7a223109d0be5e8'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xab40fe1dae842b209599269b8dafb0c54a743438'.toLowerCase()
+      ) {
+        // USDC / USDT
+        return '0x3c15041d5ef66a32d8a89ea7f177cf15891d85f5'
+      }
+      if (
+        token0.address.toLowerCase() === '0x209ba92b5cc962673a30998ed7a223109d0be5e8'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xf4340cf5f3891a3827713b33f769b501a0b5b122'.toLowerCase()
+      ) {
+        // USDC / BRC
+        return '0x775953b64D4209b983928c177400b4d4EfD1D78e'
+      }
+      if (
+        token0.address.toLowerCase() === '0x3e57d6946f893314324c975aa9cebbdf3232967e'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xf4340cf5f3891a3827713b33f769b501a0b5b122'.toLowerCase()
+      ) {
+        // WBTC / BRC
+        return '0x3131f6DCE17AC1c351e5a3FA24A465F8d9f32655'
+      }
+      if (
+        token0.address.toLowerCase() === '0x209ba92b5cc962673a30998ed7a223109d0be5e8'.toLowerCase() &&
+        token1.address.toLowerCase() === '0x3e57d6946f893314324c975aa9cebbdf3232967e'.toLowerCase()
+      ) {
+        // USDC / WBTC
+        return '0xA02E65f9C1E44d4f56b26c0F5f0414Bd204c9C80'
+      }
+      return null
+    case ChainId.BITLAYER:
+      if (
+        token0.address.toLowerCase() === '0xfe9f969faf8ad72a83b761138bf25de87eff9dd2'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f'.toLowerCase()
+      ) {
+        // USDT / WBTC
+        return '0x86aBD2Bcc2759B776747c0E3B6a41328B01e1384'
+      }
+      if (
+        token0.address.toLowerCase() === '0x9827431e8b77e87c9894bd50b055d6be56be0030'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xfe9f969faf8ad72a83b761138bf25de87eff9dd2'.toLowerCase()
+      ) {
+        // USDC / USDT
+        return '0xD184CB1441b94882bf2F35de356125E8AD5629A1'
+      }
+      return null
+    case ChainId.DARWINIA:
+      if (
+        token0.address.toLowerCase() === '0x0000000000000000000000000000000000000403'.toLowerCase() &&
+        token1.address.toLowerCase() === '0xE7578598Aac020abFB918f33A20faD5B71d670b4'.toLowerCase()
+      ) {
+        // ahUSDT / WRING
+        return '0x89d1fa5c57dac3CB38d89e5e3bd33080D02d31b1'
+      }
+      return null
+    default:
+      return null
+  }
+}
+
 export const computePairAddress = ({
   factoryAddress,
   tokenA,
@@ -31,7 +94,7 @@ export const computePairAddress = ({
   tokenB: Token
 }): string => {
   const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA] // does safety checks
-  return getCreate2Address(
+  return getPairAddress(token0, token1) ?? getCreate2Address(
     factoryAddress,
     keccak256(['bytes'], [pack(['address', 'address'], [token0.address, token1.address])]),
     INIT_CODE_HASH
