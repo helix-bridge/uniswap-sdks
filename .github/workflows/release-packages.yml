@@ -30,21 +30,21 @@ jobs:
 
       - name: Build packages
         # run: yarn g:build
-        # run: yarn sdk @helix-bridge/sdk-core build
+        run: yarn sdk @helix-bridge/sdk-core build
         # run: |
         #   yarn sdk @helix-bridge/v2-sdk build
         #   yarn sdk @helix-bridge/v3-sdk build
         # run: yarn sdk @helix-bridge/router-sdk build
         # run: yarn sdk @helix-bridge/uniswapx-sdk build
-        run: yarn sdk @helix-bridge/universal-router-sdk build
+        # run: yarn sdk @helix-bridge/universal-router-sdk build
 
       - name: Publish to GitHub Packages
-        # run: npm publish -w @helix-bridge/sdk-core
+        run: npm publish -w @helix-bridge/sdk-core
         # run: |
         #   npm publish -w @helix-bridge/v2-sdk
         #   npm publish -w @helix-bridge/v3-sdk
         # run: npm publish -w @helix-bridge/router-sdk
         # run: npm publish -w @helix-bridge/uniswapx-sdk
-        run: npm publish -w @helix-bridge/universal-router-sdk
+        # run: npm publish -w @helix-bridge/universal-router-sdk
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
