@@ -2216,16 +2216,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@helix-bridge/router-sdk@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@helix-bridge/router-sdk@npm:1.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Frouter-sdk%2F1.1.0%2F5aade6589e6ea9ae00af042e7320a0c79949d820"
+"@helix-bridge/router-sdk@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@helix-bridge/router-sdk@npm:1.2.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Frouter-sdk%2F1.2.0%2Fc00b99568aeb39d48fe895c5a88c3aa360eed0a6"
   dependencies:
     "@ethersproject/abi": ^5.5.0
-    "@helix-bridge/sdk-core": 1.1.0
-    "@helix-bridge/v2-sdk": 1.1.0
-    "@helix-bridge/v3-sdk": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
+    "@helix-bridge/v2-sdk": 1.2.0
+    "@helix-bridge/v3-sdk": 1.2.0
     "@uniswap/swap-router-contracts": ^1.3.0
-  checksum: e5c8ab16af8be60923c997baddaeef8f06094e528f2b8151435fed1ce289429dfd88e112188eff7bb50ca7c250795595e967152bf4bf42a2dc7e19395eb945ca
+  checksum: 756939e9e2893a06d3f10d3e4f7d3a3fb18da06607605a5116a8871c206c529a53aab0e7cfe40011e17ed15d9f87ab89f7a7e29433e29517e2c7f723a09cee84
   languageName: node
   linkType: hard
 
@@ -2234,9 +2234,9 @@ __metadata:
   resolution: "@helix-bridge/router-sdk@workspace:sdks/router-sdk"
   dependencies:
     "@ethersproject/abi": ^5.5.0
-    "@helix-bridge/sdk-core": 1.1.0
-    "@helix-bridge/v2-sdk": 1.1.0
-    "@helix-bridge/v3-sdk": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
+    "@helix-bridge/v2-sdk": 1.2.0
+    "@helix-bridge/v3-sdk": 1.2.0
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     prettier: ^2.4.1
@@ -2244,9 +2244,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/sdk-core@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@helix-bridge/sdk-core@npm:1.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fsdk-core%2F1.1.0%2F623ec434c8255fb44ff4b31c1301fd239907509f"
+"@helix-bridge/sdk-core@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@helix-bridge/sdk-core@npm:1.2.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fsdk-core%2F1.2.0%2F4a3cd415de0d45e9c25a8418f63c25f1e5a577d3"
   dependencies:
     "@ethersproject/address": ^5.0.2
     big.js: ^5.2.2
@@ -2254,7 +2254,7 @@ __metadata:
     jsbi: ^3.1.4
     tiny-invariant: ^1.1.0
     toformat: ^2.0.0
-  checksum: ec178d5b3ada15276f83658841790ff349f86f25072c9d7f68a1038e6757c52c784b9c0845943c4cf3d1d61bdb08535975eeefdc702831b8d727acc89e287270
+  checksum: 77273f8dbb3d19cc34f5ea65811f3e216d00386155c6691bb26ee571d071f335f54515fecccf50481b44f2791b1862bacfd7400c6a90cebc85ddf7ef077c8b2b
   languageName: node
   linkType: hard
 
@@ -2280,7 +2280,7 @@ __metadata:
   dependencies:
     "@ethersproject/bytes": ^5.7.0
     "@ethersproject/providers": ^5.7.0
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@typechain/ethers-v5": ^10.1.0
     "@types/jest": ^24.0.25
     "@types/node": ^18.7.16
@@ -2309,10 +2309,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@helix-bridge/universal-router-sdk@workspace:sdks/universal-router-sdk"
   dependencies:
-    "@helix-bridge/router-sdk": 1.1.0
-    "@helix-bridge/sdk-core": 1.1.0
-    "@helix-bridge/v2-sdk": 1.1.0
-    "@helix-bridge/v3-sdk": 1.1.0
+    "@helix-bridge/router-sdk": 1.2.0
+    "@helix-bridge/sdk-core": 1.2.0
+    "@helix-bridge/v2-sdk": 1.2.0
+    "@helix-bridge/v3-sdk": 1.2.0
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
@@ -2334,16 +2334,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/v2-sdk@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@helix-bridge/v2-sdk@npm:1.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv2-sdk%2F1.1.0%2Fff090c94a8f78ba2f1fa1e9f4821bfdc1952fa32"
+"@helix-bridge/v2-sdk@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@helix-bridge/v2-sdk@npm:1.2.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv2-sdk%2F1.2.0%2Fc318dd41f10b0c8189a238166d6113af661bbb42"
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: 7f878dc3180ff47b6c68e3f118a8811e6a14d24b91c36c587f0db6d16a40bdac2b9f7fd43a21040ebb1bfa6fa731c9eef8564564c246b49f10f12105d305b03a
+  checksum: c2094035a8a84a58b81eb25b6267fed902863209c212bf363ac1bf8161c5cb6fb9dc821eb5ca0d48ea75c2d72c418ea593306a40cb53fa74331fb83e76b710b5
   languageName: node
   linkType: hard
 
@@ -2353,7 +2353,7 @@ __metadata:
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@types/big.js": ^4.0.5
     "@types/jest": ^24.0.25
     "@uniswap/v2-core": ^1.0.1
@@ -2364,19 +2364,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@helix-bridge/v3-sdk@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@helix-bridge/v3-sdk@npm:1.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv3-sdk%2F1.1.0%2Fb201a7d1e7e8a8bddab3da1b612f4bdb6d887328"
+"@helix-bridge/v3-sdk@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@helix-bridge/v3-sdk@npm:1.2.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40helix-bridge%2Fv3-sdk%2F1.2.0%2F86d228c9a14ac7cabfeb1521fc843e8d1c81d953"
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/v3-periphery": ^1.1.1
     "@uniswap/v3-staker": 1.0.0
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: e47ebce15864313a0fe62a76029e8238bdb60d6f82f7709d52bb038b0bf02b9c91a5a2f0b99ddfc8350e554214b723814a46008f3dbe2e1eab64812f9cb8831c
+  checksum: b10b12f450c50a56745446fcdd90dcce73ca5ef71737a8aded432b862383088973c76079eec0aa1ed6d9a95c771a6f0de3345a9caa3b760ed7c67f679a5e159d
   languageName: node
   linkType: hard
 
@@ -2386,7 +2386,7 @@ __metadata:
   dependencies:
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/v3-core": 1.0.0
@@ -17810,7 +17810,7 @@ __metadata:
   resolution: "uniswapx-integration@workspace:sdks/uniswapx-sdk/integration"
   dependencies:
     "@ethersproject/bytes": ^5.7.0
-    "@helix-bridge/sdk-core": 1.1.0
+    "@helix-bridge/sdk-core": 1.2.0
     "@nomicfoundation/hardhat-chai-matchers": 1.0.6
     "@nomicfoundation/hardhat-network-helpers": ^1.0.10
     "@nomiclabs/hardhat-ethers": ^2.2.3

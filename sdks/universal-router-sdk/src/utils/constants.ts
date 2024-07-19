@@ -111,19 +111,19 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
   },
   // bitlayer testnet
   [200810]: {
-    router: '0x9d39bafc6EDd28075f3B369e175B3f014f740864',
-    weth: '0x5F8D4232367759bCe5d9488D3ade77FCFF6B9b6B',
-    creationBlock: 3937748,
+    router: '0xF834e69a4D707286A795Db89209dcB4C82A814d6',
+    weth: '0x3e57d6946f893314324C975AA9CEBBdF3232967E',
+    creationBlock: 4539465,
   },
   // bitlayer mainnet
   [200901]: {
-    router: '0x0ac58df0cc3542bec4cda71b16d06c3ccc39f405',
+    router: '0xce3984A5e602780b73c334177d8649C854C11411',
     weth: '0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F',
-    creationBlock: 2753030,
+    creationBlock: 2943275,
   },
   // darwinia
   [46]: {
-    router: '0xF8cD37bfC0f8a377b8A82C574c1bC4370EDc480B',
+    router: '0xc862B02b376628551194868966d8Db93A10FeA0A',
     weth: '0xE7578598Aac020abFB918f33A20faD5B71d670b4',
     creationBlock: 3087706,
   },
